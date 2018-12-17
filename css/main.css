@@ -1,0 +1,26 @@
+#col1,
+#col3 {
+  color: blue;
+  font-family: fantasy;
+}
+
+#col3 {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  #col1 {
+    font-size: 25px;
+    color: red;
+  }
+}
+@media (min-width: 768px) {
+  #col2,
+#col3 {
+    display: block;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,28 @@
+@import "config";
+//No media query for `xs` since this is the default in Bootstrap
+//display blue on small screen (<576px)
+#col1,
+#col3 {
+  color: blue;
+  font-family: fantasy;
+}
+
+#col3 {
+  display: none;
+}
+
+@include breakpoint(sm) {
+  //display red on screen >576px
+  #col1 {
+    font-size: 25px;
+    color: red;
+  }
+}
+@include breakpoint(md) {
+  #col2,
+  #col3 {
+    display: block;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+}
